@@ -24,11 +24,11 @@ const LeftNav = ({ isOpen = false, toggleSidebar }) => {
 
     return (
         <div className={`
-            fixed md:relative h-full w-1/4 bg-[#796FAB] text-white
-            transform transition-transform duration-300 ease-in-out z-20
+            fixed md:relative h-full w-1/5 bg-[#796FAB] text-white
+            transform transition-transform duration-300 ease-in-out z-20 rounded-r-[30px]
             ${isOpen ? 'translate-x-0' : '-translate-x-full md:translate-x-0'}
         `}>
-            <div className="flex flex-col h-full pt-4 px-4 lg:px-8 lg:pt-2">
+            <div className="flex flex-col h-full pt-4 px-4 lg:pt-2">
             <div className="p-4 mb-4 border-b pe-0 border-gray-300 py-5">
                 <div className="flex items-center justify-between">
                     <img src={assests.logo} className='' alt="Buggy Academy Logo" />
