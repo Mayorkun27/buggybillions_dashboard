@@ -82,11 +82,11 @@ const Attendance = () => {
       </div>
 
       <div className="grid grid-cols-3 gap-6">
-        <div className="col-span-2 bg-white p-2 rounded-2xl shadow">
+        <div className="col-span-2 bg-white p-4 rounded-2xl shadow">
           <h2 className="font-semibold text-lg mb-2">Students Information</h2>
           <table className="w-full text-justify">
             <thead>
-              <tr className='bg-gray-200 '>
+              <tr className='bg-white shadow rounded'>
                 <th className="py-2 px-3">Profile</th>
                 <th className='py-2 px-3'>Name</th>
                 <th className='py-2 px-3'>ID</th>
