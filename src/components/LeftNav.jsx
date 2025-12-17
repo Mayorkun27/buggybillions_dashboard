@@ -13,7 +13,13 @@ const LeftNav = ({ isOpen = false, toggleSidebar }) => {
             path: "/user/overview", 
             icon: <LuLayoutDashboard />, 
             role: "user" 
-        }
+        },
+        { 
+            name: "Dashboard", 
+            path: "/user/overview", 
+            icon: <LuLayoutDashboard />, 
+            role: "user" 
+        },
     ]
 
     const handleNavClick = () => {
