@@ -1,5 +1,5 @@
 import React from "react";
-import { assests } from "../../assets/images/assest";
+import { assests } from "../../assets/assest";
 import { FaUser } from "react-icons/fa";
 import { MdLock } from "react-icons/md";
 import { Link } from "react-router-dom";
@@ -69,20 +69,17 @@ const Login = () => {
               Login
             </button>
 
-            <div className="text-sm text-center mt-4 text-gray-600 flex flex-col">
+            <p className="text-sm text-center mt-4 text-gray-600 flex flex-col">
               <a href="#" className="text-sm text-black">
                 Forgot Password?
               </a>
               <div className="flex justify-center gap-1">
                 <p className="text-black"> Don’t have an account? </p>
-                <Link
-                  to="#"
-                  className="text-red-500 font-semibold decoration-none"
-                >
+                <a href="#" className="text-red-500 font-semibold">
                   Sign up
-                </Link>
+                </a>
               </div>
-            </div>
+            </p>
           </form>
         </div>
       </div>

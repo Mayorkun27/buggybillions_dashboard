@@ -1,5 +1,5 @@
 import React from "react";
-import { assests } from "../../assets/images/assest";
+import { assests } from "../../assets/assest";
 import { MdEmail } from "react-icons/md";
 
 const ForgotPassword = () => {

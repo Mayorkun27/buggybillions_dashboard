@@ -1,4 +1,4 @@
-import { assests } from "../../assets/images/assest";
+import { assests } from "../../assets/assest";
 
 const Assignment = () => {
   return (
