@@ -3,11 +3,12 @@ import { Toaster } from "sonner";
 
 import MainLayout from "./layout/MainLayout";
 
-import Overview from "./pages/user/Overview";
+import Overview from "./pages/student/Overview";
 import Curriculum from "./pages/tutor/Curriculum";
 import Attendance from "./pages/tutor/Attendance";
 import Student from "./pages/tutor/Student";
 import Assignment from "./pages/tutor/Assignment";
+import Timetable from "./pages/student/Timetable";
 
 import Login from "./pages/auth/Login";
 import ForgotPassword from "./pages/auth/ForgotPassword";
@@ -25,9 +26,9 @@ function App() {
         <Route path="/auth/login" element={<Login />} />
         <Route path="/auth/forgot-password" element={<ForgotPassword />} />
 
-        {/* User routes */}
+        {/* student routes */}
         <Route
-          path="/user/overview"
+          path="/student/overview"
           element={<MainLayout child={<Overview />} />}
         />
 
@@ -47,6 +48,10 @@ function App() {
         <Route
           path="/tutor/assignment"
           element={<MainLayout child={<Assignment />} />}
+        />
+        <Route
+          path="/student/timetable"
+          element={<MainLayout child={<Timetable />} />}
         />
 
         {/* Fallback */}

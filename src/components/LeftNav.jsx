@@ -13,9 +13,15 @@ const LeftNav = ({ isExpanded, setIsExpanded }) => {
   const navLinks = [
     {
       name: "Dashboard",
-      path: "/user/overview",
+      path: "/student/overview",
       icon: <LuLayoutDashboard />,
-      role: "user",
+      role: "student",
+    },
+    {
+      name: "Timetable",
+      path: "/student/Timetable",
+      icon: <LuLayoutDashboard />,
+      role: "student",
     },
     {
       name: "Curriculum",
