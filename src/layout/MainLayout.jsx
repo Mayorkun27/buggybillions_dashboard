@@ -6,7 +6,7 @@ import { FaBars } from "react-icons/fa";
 
 const MainLayout = ({ child, heading, subText }) => {
   const mainContentRef = useRef(null);
-  const [isExpanded, setIsExpanded] = useState(true);
+  const [isExpanded, setIsExpanded] = useState(false);
   const pageVariants = {
     initial: {
       opacity: 0,
@@ -34,8 +34,8 @@ const MainLayout = ({ child, heading, subText }) => {
     <div
       className={`w-screen h-screen overflow-hidden flex items-start bg-white`}
     >
-      <div onClick={() => setIsExpanded(!isExpanded)} className={`lg:w-1/5 md:w-1/3 h-full w-full lg:static absolute ${isExpanded ? "top-0 left-0" : "-left-full"} z-50 bg-black/70`}>
-        <LeftNav isExpanded={isExpanded} setIsExpanded={setIsExpanded} />
+      <div onClick={() => setIsExpanded(!isExpanded)} className={`lg:w-1/5 h-full w-full lg:static absolute ${isExpanded ? "top-0 left-0" : "-left-full"} z-50 bg-black/70`}>
+        <LeftNav setIsExpanded={setIsExpanded} />
       </div>
       <div className="flex-1 flex flex-col h-full w-full">
         <div className="flex gap-2 items-center w-full overflow-hidden md:px-6 px-4 py-6 shadow-md">

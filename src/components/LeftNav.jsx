@@ -7,7 +7,7 @@ import { RiUserAddFill } from "react-icons/ri";
 import { MdAssignmentAdd, MdSentimentVerySatisfied } from "react-icons/md";
 import { GiNotebook } from "react-icons/gi";
 
-const LeftNav = ({ isExpanded, setIsExpanded }) => {
+const LeftNav = ({ setIsExpanded }) => {
   const navLinks = [
     {
       name: "Dashboard",
@@ -61,7 +61,7 @@ const LeftNav = ({ isExpanded, setIsExpanded }) => {
 
   return (
     <div
-      className={`lg:w-full md:w-1/3 w-3/4 transition-all left-nav duration-500 left-nav relative bg-purple h-full pt-4 lg:pt-2 pb-8 px-4 flex items-start flex-col gap-2`}
+      className={`lg:w-full md:w-1/2 w-3/4 transition-all left-nav duration-500 left-nav relative bg-purple h-full pt-4 lg:pt-2 pb-8 px-4 flex items-start flex-col gap-2`}
     >
       <div className="py-4 mb-4 pe-3 w-full">
         <img src={assests.logo} className="" alt="Buggy Academy Logo" />

@@ -7,7 +7,7 @@ import Login from "./pages/auth/Login";
 import ForgotPassword from "./pages/auth/ForgotPassword";
 
 import Overview from "./pages/student/Overview";
-import Timetable from "./pages/student/TimeTable";
+import Timetable from "./pages/student/Timetable";
 import StudentCurriculm from "./pages/student/StudentCurriculm";
 import StudentAssignments from "./pages/student/StudentAssignments";
 
