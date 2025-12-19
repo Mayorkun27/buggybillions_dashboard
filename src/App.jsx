@@ -8,12 +8,10 @@ import Curriculum from "./pages/tutor/Curriculum";
 import Attendance from "./pages/tutor/Attendance";
 import Student from "./pages/tutor/Student";
 import Assignment from "./pages/tutor/Assignment";
-import Timetable from "./pages/student/Timetable";
+import Timetable from "./pages/student/TimeTable";
 
 import Login from "./pages/auth/Login";
 import ForgotPassword from "./pages/auth/ForgotPassword";
-import StudentCurriculm from "./pages/student/StudentCurriculm";
-import StudentAssignments from "./pages/student/StudentAssignments";
 
 function App() {
   return (
@@ -53,6 +51,10 @@ function App() {
         <Route
           path="/tutor/attendance"
           element={<MainLayout child={<Attendance />} />}
+        />
+        <Route
+          path="/tutor/dashboard"
+          element={<MainLayout child={<Dashboard />} />}
         />
         <Route
           path="/tutor/student"
