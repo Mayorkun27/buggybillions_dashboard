@@ -3,18 +3,20 @@ import { Toaster } from "sonner";
 
 import MainLayout from "./layout/MainLayout";
 
+import Login from "./pages/auth/Login";
+import ForgotPassword from "./pages/auth/ForgotPassword";
+
 import Overview from "./pages/student/Overview";
+import Timetable from "./pages/student/TimeTable";
+import StudentCurriculm from "./pages/student/StudentCurriculm";
+import StudentAssignments from "./pages/student/StudentAssignments";
+
+import Dashboard from "./pages/tutor/Dashboard";
 import Curriculum from "./pages/tutor/Curriculum";
 import Attendance from "./pages/tutor/Attendance";
 import Student from "./pages/tutor/Student";
 import Assignment from "./pages/tutor/Assignment";
-import Timetable from "./pages/student/TimeTable";
 
-import Login from "./pages/auth/Login";
-import ForgotPassword from "./pages/auth/ForgotPassword";
-import StudentCurriculm from "./pages/student/StudentCurriculm";
-import StudentAssignments from "./pages/student/StudentAssignments";
-import Dashboard from "./pages/tutor/Dashboard";
 
 function App() {
   return (
