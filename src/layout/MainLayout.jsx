@@ -2,8 +2,9 @@ import React, { useRef, useState } from "react";
 import LeftNav from "../components/LeftNav";
 import TopNav from "../components/TopNav";
 import { AnimatePresence, motion } from "framer-motion";
+import { FaBars } from "react-icons/fa";
 
-const MainLayout = ({ child }) => {
+const MainLayout = ({ child, heading, subText }) => {
   const mainContentRef = useRef(null);
   const [isExpanded, setIsExpanded] = useState(true);
   const pageVariants = {
@@ -31,16 +32,28 @@ const MainLayout = ({ child }) => {
 
   return (
     <div
-      className={`w-screen h-screen parent ${
-        isExpanded && "expand"
-      } overflow-hidden flex items-start bg-white`}
+      className={`w-screen h-screen overflow-hidden flex items-start bg-white`}
     >
-      <LeftNav isExpanded={isExpanded} setIsExpanded={setIsExpanded} />
-      <div className="flex-1 flex flex-col h-full">
-        <TopNav />
+      <div onClick={() => setIsExpanded(!isExpanded)} className={`lg:w-1/5 md:w-1/3 h-full w-full lg:static absolute ${isExpanded ? "top-0 left-0" : "-left-full"} z-50 bg-black/70`}>
+        <LeftNav isExpanded={isExpanded} setIsExpanded={setIsExpanded} />
+      </div>
+      <div className="flex-1 flex flex-col h-full w-full">
+        <div className="flex gap-2 items-center w-full overflow-hidden md:px-6 px-4 py-6 shadow-md">
+          <button
+            type="button"
+            className="lg:hidden p-2"
+            onClick={() => setIsExpanded(!isExpanded)}
+          >
+            <FaBars />
+          </button>
+          <TopNav
+            heading={heading} 
+            subText={subText}
+          />
+        </div>
         <main
           ref={mainContentRef}
-          className={`transition-all duration-500 h-full overflow-y-auto no-scrollbar md:p-6 p-4 w-full`}
+          className={`transition-all duration-500 h-full overflow-y-auto md:px-6 px-4 no-scrollbar py-6 w-full`}
           style={{
             minHeight: "0",
             WebkitOverflowScrolling: "touch",

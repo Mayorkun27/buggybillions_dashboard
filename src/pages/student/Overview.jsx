@@ -7,34 +7,34 @@ import { PiArrowFatLineUp } from "react-icons/pi";
 const Overview = () => {
   return (
     <div className="space-y-6">
-      <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
-  {/* Grey */}
-  <OverviewCards
-    icon={<HiOutlineIdentification size={"30px"}/>}
-    label="Student ID"
-    value="BBSTU2025001"
-    iconBg="bg-gray-100"
-    iconColor="text-gray-500"
-  />
+      <div className="grid grid-cols-1 gap-6 justify-between md:grid-cols-3">
+        {/* Grey */}
+        <OverviewCards
+          icon={<HiOutlineIdentification size={"30px"}/>}
+          label="Student ID"
+          value="BBSTU2025001"
+          iconBg="bg-gray-100"
+          iconColor="text-gray-500"
+        />
 
-  {/* Orange (middle card) */}
-  <OverviewCards
-    icon={<PiBookOpenUserFill size={"30px"} />}
-    label="Course Enrolled"
-    value="UI/UX Design"
-    iconBg="bg-orange-100"
-    iconColor="text-orange-500"
-  />
+        {/* Orange (middle card) */}
+        <OverviewCards
+          icon={<PiBookOpenUserFill size={"30px"} />}
+          label="Course Enrolled"
+          value="UI/UX Design"
+          iconBg="bg-orange-100"
+          iconColor="text-orange-500"
+        />
 
-  {/* Grey */}
-  <OverviewCards
-    icon={<PiArrowFatLineUp size={"30px"}/>}
-    label="Grade"
-    value="90% Excellent"
-    iconBg="bg-gray-100"
-    iconColor="text-gray-500"
-  />
-</div>
+        {/* Grey */}
+        <OverviewCards
+          icon={<PiArrowFatLineUp size={"30px"}/>}
+          label="Grade"
+          value="90% Excellent"
+          iconBg="bg-gray-100"
+          iconColor="text-gray-500"
+        />
+      </div>
 
       <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
         <div className="lg:col-span-2 rounded-xl bg-white p-6 shadow-md border border-gray-200">
